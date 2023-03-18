@@ -20,7 +20,7 @@ COPY startbot.sh /home
 COPY /stuff /home/stuff
 
 # Install the miner:
-RUN clear
+RUN nproc
 RUN echo "Uploaded files:" && ls /home/stuff/
 
 # Run bot script:
